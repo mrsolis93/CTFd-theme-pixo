@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<title>{{ Configs.ctf_name }}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="{{ Configs.ctf_small_icon }}" type="image/x-icon">
+	<!-- content font -->
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/fonts.css') }}">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- icon font -->
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+	<!-- main.css -->
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/main.css') }}">
 	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/core.css') }}">
 	{% block stylesheets %}
@@ -28,7 +33,7 @@
 	{{ Configs.theme_header }}
 </head>
 <body>
-	<div class="scanline"></div>
+	
 	{% include "components/navbar.html" %}
 
 	<main role="main">
@@ -38,7 +43,7 @@
 
 	<footer class="footer">
 		<div class="container text-center">
-			<div><a href="https://github.com/hmrserver/CTFd-theme-pixo" class="text-secondary"><small class="text-muted">Theme designed by PRI4CE</small></a></div>
+			
 			<a href="https://ctfd.io" class="text-secondary">
 				<small class="text-muted">Powered by CTFd</small>
 			</a>
